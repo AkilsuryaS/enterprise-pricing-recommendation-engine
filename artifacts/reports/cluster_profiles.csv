@@ -1,0 +1,6 @@
+cluster_id,sku_count,median_list_price,median_rating_count,avg_historical_win_rate,avg_historical_quantity,avg_historical_price_ratio,avg_market_count
+0,2571,25.99,17.0,0.5389,10.417,0.9029,2.5947
+1,5193,25.99,373.0,0.7989,13.6295,0.8941,4.9357
+2,1488,29.99,24.0,0.8131,41.8647,0.8564,3.3192
+3,2962,389.99,24.0,0.8413,11.0529,0.8943,3.108
+4,4786,21.0,17.0,0.9157,9.8309,0.8966,2.65

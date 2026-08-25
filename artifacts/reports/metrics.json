@@ -1,0 +1,101 @@
+{
+  "scope": {
+    "catalog_skus": 17000,
+    "markets": 9,
+    "quote_rows": 180000,
+    "won_quote_rate": 0.7959555555555555,
+    "source_transaction_rows": 1067371
+  },
+  "temporal_split": {
+    "train_end": "2025-07-23 12:00:00",
+    "validation_end": "2025-10-24 14:00:00",
+    "test_end": "2025-12-26 23:00:00",
+    "train_rows": 126011,
+    "validation_rows": 26991,
+    "test_rows": 26998
+  },
+  "segmentation": {
+    "selected_k": 5,
+    "silhouette_scores": {
+      "4": 0.15386056555263466,
+      "5": 0.15488876246848923,
+      "6": 0.1499162404252648,
+      "7": 0.12085375441132162,
+      "8": 0.11997862893345139
+    }
+  },
+  "approval_calibration": {
+    "confidence_threshold": 0.5124445235729218,
+    "validation_auto_approval_rate": 0.4494561140285071,
+    "validation_auto_p90_ape": 0.09473586285198003
+  },
+  "test_regression": {
+    "won_quote_rows": 21109,
+    "mae_usd": 7.165615946740759,
+    "median_ape": 0.04199050262728726,
+    "p90_ape": 0.10074321619848861,
+    "q10_pinball_loss": 2.9798996525107566,
+    "q50_pinball_loss": 3.840840161075916,
+    "q90_pinball_loss": 1.9249082637074448,
+    "q10_q90_coverage": 0.9206025865744469,
+    "baseline_mae_usd": 9.477658641209606,
+    "mae_improvement_vs_prior_price": 0.2439466098109826
+  },
+  "test_decisions": {
+    "auto_approval_rate": 0.46203041356767255,
+    "auto_approved_rows": 9753,
+    "manual_review_rows": 11356,
+    "auto_subset_median_ape": 0.04185469251303905,
+    "auto_subset_p90_ape": 0.09950982406255482,
+    "baseline_minutes_per_quote": 10.0,
+    "blended_minutes_per_quote": 2.4825737836941593,
+    "estimated_throughput_multiplier": 4.028077661047254
+  },
+  "market_mix": [
+    {
+      "market": "BE",
+      "transaction_share": 0.0038915606074295976,
+      "cancellation_rate": 0.01729106628242075
+    },
+    {
+      "market": "CH",
+      "transaction_share": 0.00375921191443657,
+      "cancellation_rate": 0.016306052053935403
+    },
+    {
+      "market": "DE",
+      "transaction_share": 0.02119233446550853,
+      "cancellation_rate": 0.05225828415796641
+    },
+    {
+      "market": "ES",
+      "transaction_share": 0.0047098318535307195,
+      "cancellation_rate": 0.023878247179218052
+    },
+    {
+      "market": "FR",
+      "transaction_share": 0.017492933979636117,
+      "cancellation_rate": 0.027145847871598044
+    },
+    {
+      "market": "IE",
+      "transaction_share": 0.019657598660224,
+      "cancellation_rate": 0.02865938986845788
+    },
+    {
+      "market": "NL",
+      "transaction_share": 0.006368008266702978,
+      "cancellation_rate": 0.009143968871595331
+    },
+    {
+      "market": "PT",
+      "transaction_share": 0.0030974684494714322,
+      "cancellation_rate": 0.022137404580152672
+    },
+    {
+      "market": "UK",
+      "transaction_share": 0.91983105180306,
+      "cancellation_rate": 0.0204225782778865
+    }
+  ]
+}

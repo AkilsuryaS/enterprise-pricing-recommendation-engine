@@ -1,0 +1,50 @@
+project:
+  seed: 20260825
+  catalog_size: 17000
+  quote_rows: 180000
+  target_auto_approval_rate: 0.45
+
+data:
+  catalog_path: data/processed/electronics_catalog.parquet
+  uci_path: data/raw/online_retail_II.xlsx
+  market_profiles_path: data/processed/market_profiles.csv
+  quote_events_path: data/processed/quote_events.parquet
+
+segmentation:
+  candidate_clusters: [4, 5, 6, 7, 8]
+  sample_size_for_selection: 10000
+
+model:
+  quantiles: [0.10, 0.50, 0.90]
+  n_estimators: 260
+  max_depth: 7
+  learning_rate: 0.055
+  min_child_weight: 12
+  subsample: 0.86
+  colsample_bytree: 0.82
+  reg_lambda: 2.0
+  n_jobs: 4
+
+guardrails:
+  min_margin_by_tier:
+    strategic: 0.10
+    enterprise: 0.14
+    mid_market: 0.18
+    channel: 0.12
+  max_discount_by_tier:
+    strategic: 0.32
+    enterprise: 0.25
+    mid_market: 0.18
+    channel: 0.28
+  max_quote_value_for_auto_approval_usd: 250000
+  max_cost_change_pct: 0.18
+  min_inventory_weeks: 1.5
+  min_history_count: 3
+  max_normalized_interval_width: 0.35
+  max_validation_p90_ape: 0.14
+
+operations:
+  baseline_manual_minutes: 10.0
+  assisted_review_minutes: 4.4
+  automated_oversight_minutes: 0.25
+

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-pricing-recommendation-engine"
+version = "0.1.0"
+description = "Public-data, enterprise-grade B2B pricing recommendation case study"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "joblib>=1.4,<2",
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<3",
+  "openpyxl>=3.1,<4",
+  "pandas>=2.2,<4",
+  "pyarrow>=17,<24",
+  "pydantic>=2.9,<3",
+  "pyyaml>=6,<7",
+  "scikit-learn>=1.5,<2",
+  "seaborn>=0.13,<1",
+  "uvicorn>=0.30,<1",
+  "xgboost>=2.1,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
