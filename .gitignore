@@ -7,3 +7,6 @@ deliverables/
 data/processed/*.parquet
 artifacts/models/
 artifacts/charts/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
