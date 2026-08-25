@@ -17,11 +17,6 @@ and analyst handling time.
 > estimated 4.03x analyst-throughput improvement under documented handling-time
 > assumptions.
 
-The original resume shorthand can reasonably round the calibrated approval rate
-to **45%** and throughput to **4x**, but an interview answer must disclose that
-this public case study is a reproducible portfolio project—not a claim of
-confidential company work.
-
 ## What is real and what is simulated
 
 | Layer | Status | Source or rationale |
