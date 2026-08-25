@@ -7,6 +7,8 @@ labeled deterministic simulation for fields that cannot exist in a public quote
 ledger: product cost, contract terms, inventory, customer tier, quote outcomes,
 and analyst handling time.
 
+**[Open the live pricing intelligence app](https://enterprise-pricing-recommendation-e.vercel.app/)**
+
 ## Validated project statement
 
 > Built an end-to-end pricing recommendation engine for 17,000 computer and
